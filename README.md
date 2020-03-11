@@ -74,8 +74,4 @@ From the heatmap based on the variable importance, we can clearly see that pixel
 
 As n_learn increases upto 90 percentage of n, time to cross-validate and to fit increases more than twice in general. Ridge doesn’t improve test error rate as nlearn increases. LASSO reduces test error rate in half, the most affected by increasing n_learn. Radial SVM spends much more time, but results in the worse test error rate. Important variables are pixels around the center of cell images.
 
-The best method for this dataset is Random Forest in terms of test error rate and time. The larger n_learn improves test error rates except for ridge regression. R-SVM is the worst method for this dataset
-
-[Analysis Report](https://drive.google.com/open?id=1iybkj00lmuhgsGshC2U2xrCKo7obpWWR)
-
-[R Code](https://drive.google.com/open?id=1mSzBeKDjYWgE_lmkgLCyfMOiw356wTCK)
+The best method for this dataset is Random Forest in terms of test error rate and time. The larger n_learn improves test error rates except for ridge regression. R-SVM is the worst method for this dataset.
