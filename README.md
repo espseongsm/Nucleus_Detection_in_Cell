@@ -60,13 +60,13 @@ When n_learn = 0.9n, it however takes time to cross validate and fit three time 
 
 ### Variable Importance
 
-![Variable Importance](https://drive.google.com/uc?export=view&id=10Iewbi8ZrI438sQI7QnGKpsjs9_Ps3hL)
+![Variable Importance](3.jpeg)
 
 Regarding variable importance, lasso regression, ridge regression, and RF show central tendency in general.
 
 ### Estimated Location of Nucleus in Cell
 
-![Estimated location of Nucleus](https://drive.google.com/uc?export=view&id=14zbTs_osdQ3inQzhKEth-yVghXaO9zmM)
+![Estimated location of Nucleus](5.jpeg)
 
 From the heatmap based on the variable importance, we can clearly see that pixels around center are more important than other pixels. We can predict that cell images configuration from ridge and nucleus's location in cell generally.
 
