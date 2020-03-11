@@ -8,7 +8,7 @@ Jan 3rd, 2020
 
 ## Brief Summary
 
-This is the brief summary of this project. If you are curious aobut details and code, please check the linked analysis report and R code.
+This is the brief summary of this project. If you are curious aobut details and code, please check the linked analysis report and R code above.
 
 Random Forest is the best algorithm for this dataset. Regardless of the train data size, Random Forest marks the lowest test error rate with the shortest training time. In addition, increasing the size of train data improves the test error rate for Random Forest. Let me explain why Random Forest is the best.
 
@@ -35,21 +35,17 @@ In addition to the misclassification error rate comparison, we evaluate whether 
 | Size of train data | 0.5n           | 0.9n           |
 | Size of test data  | 0.5n           | 0.1n           |
 
-### n_learn = 0.5n Performance Comparison
+### Performance Comparison
 
-![0.5n Comparison](https://drive.google.com/uc?export=view&id=1z_rspWuBU4pERNZziydULyEz1-jJlqox)
+![Performance Comparison](1.jpeg)
 
 Given the size of train data = 0.5n, Random Forest(RF) is the best, and logistic regression the worst because it's overfitted. Cross validation error rates are good estimates of test error rates. Interestingly, RF Out-Of-Bag error in train error rates is also a good estimate of test error rate.
 
 R-SVM takes the longest time to cross validate for this dataset although the test error rate is the second worst, and RF is the fastest one with the best test error rate.
 
-### n_learn = 0.9n Performance Comparison
-
-![0.9n Comparison](https://drive.google.com/uc?export=view&id=1O4uN-9wbDY2Nt4Hak-QYYXDUMZ_DrRB0)
-
 Like n_learn = 0.5n, there are similar patterns in n_learn = 0.9n. However, overfitting in n_learn = 0.9n is less severe than n_learn = 0.5n. That is, increasing the size of train data improves overfiting and test misclassification error rates.
 
-When n_learn = 0.9n, it takes time to cross validate and fit three time as much as when n_learn = 0.5n. Increasing the size of train data from 0.5n to 0.9n improves test error rates in most algorithm.
+When n_learn = 0.9n, it however takes time to cross validate and fit three time as much as when n_learn = 0.5n. Increasing the size of train data from 0.5n to 0.9n improves test error rates in most algorithm.
 
 ### Trade Off Between Time and Performance
 
@@ -60,7 +56,7 @@ When n_learn = 0.9n, it takes time to cross validate and fit three time as much 
 | SVM           | m = 1.4, p-value = 9e-14 < 0.05      |
 | Random Forest | m = 0.6, p-value = 2e-7 < 0.05       |
 
-0.9n takes time to cross validate and fit three times as much as 0.5n.Test error rates are also improved except ridge regression by A/B testing on two different train data size. As the p-value of two sample test is 0.14, which is greater than 0.05, we don't need to increase the size of train data if we use ridge logistic regression.
+0.9n takes time to cross validate and fit three times as much as 0.5n. Test error rates are also improved except ridge regression by A/B testing on two different train data size. As the p-value of two sample test is 0.14, which is greater than 0.05, we don't need to increase the size of train data if we use ridge logistic regression.
 
 ### Variable Importance
 
@@ -80,6 +76,6 @@ As n_learn increases upto 90 percentage of n, time to cross-validate and to fit 
 
 The best method for this dataset is Random Forest in terms of test error rate and time. The larger n_learn improves test error rates except for ridge regression. R-SVM is the worst method for this dataset
 
-[PDF](https://drive.google.com/open?id=1iybkj00lmuhgsGshC2U2xrCKo7obpWWR)
+[Analysis Report](https://drive.google.com/open?id=1iybkj00lmuhgsGshC2U2xrCKo7obpWWR)
 
 [R Code](https://drive.google.com/open?id=1mSzBeKDjYWgE_lmkgLCyfMOiw356wTCK)
