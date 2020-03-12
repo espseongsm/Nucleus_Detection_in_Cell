@@ -70,7 +70,7 @@ Regarding variable importance, lasso regression, ridge regression, and RF show c
 
 ![Estimated location of Nucleus](5.jpeg)
 
-From the heatmap based on the variable importance, we can clearly see that pixels around center are more important than other pixels. We can predict that cell images configuration from ridge and nucleus's location in cell generally.
+From the heatmap based on the variable importance, we can clearly see that pixels around center are more important than other pixels. We can predict that cell images configuration from ridge and nucleus's location from RF.
 
 ### Conclusion
 
