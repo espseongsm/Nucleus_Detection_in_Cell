@@ -8,9 +8,11 @@ Jan 3rd, 2020
 
 ## Brief Summary
 
-This is the brief summary of this project. If you are curious aobut details and code, please check the linked analysis report and R code above.
+This is a brief summary of this project. If you are curious aobut details and code, please check the linked analysis report and R code above.
 
-Random Forest is the best algorithm for this dataset. Regardless of the train data size, Random Forest marks the lowest test error rate with the shortest training time. In addition, increasing the size of train data improves the test error rate for Random Forest. Let me explain why Random Forest is the best.
+**The purpose is which machine learning algorithm shows the best performace from this dataset and whether the data size matters or not. And, we estimate the possible location of a nucleus in cell.**
+
+**Random Forest is the best algorithm for this dataset.** Regardless of the train data size, Random Forest marks the lowest test error rate with the shortest training time. In addition, increasing the size of train data improves the test error rate for Random Forest. Let me explain why Random Forest is the best.
 
 ### Data Description
 
@@ -18,7 +20,7 @@ This dataset comes from [Kaggle](https://www.kaggle.com/zicouc/pixelss-intensity
 
 ### Concept of Analysis
 
-In order to figure out the best algorithm for this data, I compare five classification algorithms in terms of performance by 100 iterations.
+In order to figure out the best algorithm for this data, five classification algorithms are compared each other in terms of performance by 100 iterations.
 
 - Radial Support Vector Machine(R-SVM)
 - Random Forest(RF)
